@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -euo pipefail
+if [ "$#" -ne 1 ]; then
+  echo "Usage: plainly-runner <file.plainly>" >&2
+  exit 1
+fi
+python3 /home/skm/projects/plainly/plainly.py "$1"
